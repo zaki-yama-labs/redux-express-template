@@ -4,7 +4,7 @@ import path from 'path';
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
 export default {
-  context: path.resolve(__dirname, './src'),
+  context: path.resolve(__dirname, './public'),
   entry: './index.js',
   output: {
     filename: 'bundle.js',
@@ -13,7 +13,7 @@ export default {
   },
   // Configuration for dev server
   devServer: {
-    contentBase: path.resolve(__dirname, './src'),
+    contentBase: path.resolve(__dirname, './public'),
     port: 3000,
   },
 
