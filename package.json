@@ -4,9 +4,10 @@
   "description": "A starter kit for developing React&Redux app",
   "main": "index.js",
   "scripts": {
+    "prestart": "npm run build",
     "build": "webpack --progress --colors",
     "build:prod": "NODE_ENV=production npm run build",
-    "start": "webpack-dev-server --inline --hot",
+    "start": "nodemon server.js --exec babel-node",
     "lint": "eslint src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
