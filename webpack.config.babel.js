@@ -4,19 +4,19 @@ import path from 'path';
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
 export default {
-  context: path.resolve(__dirname, './public'),
+  context: path.resolve(path.join(__dirname, 'public')),
   entry: [
     'webpack-hot-middleware/client',
-    './index.js',
+    './index',
   ],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './public'),
+    path: path.resolve(path.join(__dirname, 'public')),
     publicPath: '/assets',
   },
   // Configuration for dev server
   devServer: {
-    contentBase: path.resolve(__dirname, './public'),
+    contentBase: path.resolve(path.join(__dirname, 'public')),
     port: 3000,
   },
 
