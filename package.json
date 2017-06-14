@@ -4,10 +4,9 @@
   "description": "A starter kit for developing React&Redux app",
   "main": "index.js",
   "scripts": {
-    "prestart": "npm run build",
     "build": "webpack --progress --colors",
     "build:prod": "NODE_ENV=production npm run build",
-    "start": "nodemon server.js --exec babel-node",
+    "start": "babel-node server.js",
     "lint": "eslint src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -43,6 +42,8 @@
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.1",
     "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.18.0"
   }
 }

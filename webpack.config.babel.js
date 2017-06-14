@@ -5,7 +5,10 @@ const PRODUCTION = process.env.NODE_ENV === 'production';
 
 export default {
   context: path.resolve(__dirname, './public'),
-  entry: './index.js',
+  entry: [
+    'webpack-hot-middleware/client',
+    './index.js',
+  ],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, './public'),
@@ -46,7 +49,9 @@ export default {
         }),
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.DedupePlugin(),
-      ] : []
+      ] : [
+        new webpack.HotModuleReplacementPlugin(),
+      ]
     ),
   ],
   // http://webpack.github.io/docs/configuration.html#resolve-extensions

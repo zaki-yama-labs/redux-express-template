@@ -4,4 +4,9 @@
     "transform-class-properties",
     "transform-object-rest-spread"
   ],
+  "env": {
+    "development": {
+      "presets": ["react-hmre"]
+    }
+  }
 }
