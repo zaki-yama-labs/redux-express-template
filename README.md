@@ -1,20 +1,31 @@
-React Redux Template
---------------------
+Redux-Express Template
+======================
 
-A starter kit for developing React/Redux application.
+A boilerplate for developing Express app with React&Redux.
 
-Including:
+### Stack
 
-- ES2015 (Babel)
-- React & Redux
-- ESLint
-- Webpack & Webpack Dev Server
+* ES2015 (Babel)
+* React & Redux
+* Express
+* ESLint
+* Webpack & Webpack Dev Server
 
 ### Usage
 
-Build your app under `src` directory, and run
+#### Run Locally
 
 ```
-$ npm install
-$ npm start
+$ yarn
+$ yarn start
+```
+
+#### Deploy to Heroku
+
+After installing [Heroku CLI](https://github.com/heroku/cli), run
+
+```
+$ heroku apps:create [your-app-name]
+$ git push heroku master
+$ heroku open
 ```
