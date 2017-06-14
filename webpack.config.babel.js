@@ -11,7 +11,7 @@ export default {
   ],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(path.join(__dirname, 'public')),
+    path: path.resolve(path.join(__dirname, 'public', 'assets')),
     publicPath: '/assets',
   },
   // Configuration for dev server
