@@ -6,9 +6,7 @@ export default merge(baseConfig, {
   devtool: 'cheap-module-source-map',
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false,
-      },
+      sourceMap: true,
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
