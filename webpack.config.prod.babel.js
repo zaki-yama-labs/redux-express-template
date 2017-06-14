@@ -8,7 +8,5 @@ export default merge(baseConfig, {
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
     }),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.DedupePlugin(),
   ],
 });
