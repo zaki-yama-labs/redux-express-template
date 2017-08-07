@@ -28,6 +28,7 @@
     "node-sass": "^4.5.3",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-hot-loader": "next",
     "react-redux": "^4.4.5",
     "redux": "^3.6.0",
     "redux-logger": "^2.8.1",
