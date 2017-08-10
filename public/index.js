@@ -1,7 +1,7 @@
 import 'react-hot-loader/patch';
 import React from 'react';
-import { render, unmountComponentAtNode } from 'react-dom';
 import { Provider } from 'react-redux';
+import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
 import configureStore from './store/configureStore';
@@ -12,24 +12,25 @@ import './styles/index.scss';
 const store = configureStore();
 
 const rootEl = document.getElementById('root');
-const renderApp = () => {
-  render(
-    <AppContainer>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </AppContainer>,
-    rootEl,
-  );
-};
 
-renderApp();
+render(
+  <AppContainer>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </AppContainer>,
+  rootEl,
+);
 
 if (module.hot) {
   module.hot.accept('./containers/App', () => {
-    setImmediate(() => {
-      unmountComponentAtNode(rootEl);
-      renderApp();
-    });
+    render(
+      <AppContainer>
+        <Provider store={store}>
+          <App />
+        </Provider>
+      </AppContainer>,
+      rootEl,
+    );
   });
 }
