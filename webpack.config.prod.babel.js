@@ -8,5 +8,6 @@ export default merge(baseConfig, {
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
     }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
   ],
 });
