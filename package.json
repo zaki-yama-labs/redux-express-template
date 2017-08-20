@@ -6,7 +6,7 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --config=webpack.config.prod.babel.js --progress --colors",
     "heroku-postbuild": "npm run build",
-    "start": "babel-node server.js",
+    "start": "babel-node app.js",
     "lint": "eslint src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
