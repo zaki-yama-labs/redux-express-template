@@ -8,9 +8,9 @@
     "start": "babel-watch app.js",
     "build": "yarn run build:client && yarn run build:server",
     "build:client": "NODE_ENV=production webpack --config=webpack.config.prod.babel.js --progress --colors",
-    "build:server": "babel app.js -d dist",
+    "build:server": "babel app.js -o bundle-server.js",
     "lint": "eslint src",
-    "serve": "node dist/app.js",
+    "serve": "node bundle-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
