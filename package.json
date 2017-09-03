@@ -4,10 +4,13 @@
   "description": "A boilerplate for developing Express app with React&Redux",
   "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=production webpack --config=webpack.config.prod.babel.js --progress --colors",
-    "heroku-postbuild": "npm run build",
+    "heroku-postbuild": "yarn run build",
     "start": "babel-node app.js",
+    "build": "yarn run build:client && yarn run build:server",
+    "build:client": "NODE_ENV=production webpack --config=webpack.config.prod.babel.js --progress --colors",
+    "build:server": "babel app.js -d dist",
     "lint": "eslint src",
+    "serve": "node dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
