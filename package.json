@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "heroku-postbuild": "yarn run build",
-    "start": "babel-node app.js",
+    "start": "babel-watch app.js",
     "build": "yarn run build:client && yarn run build:server",
     "build:client": "NODE_ENV=production webpack --config=webpack.config.prod.babel.js --progress --colors",
     "build:server": "babel app.js -d dist",
@@ -43,6 +43,7 @@
     "webpack-merge": "^4.1.0"
   },
   "devDependencies": {
+    "babel-watch": "^2.0.7",
     "eslint": "^3.9.1",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
