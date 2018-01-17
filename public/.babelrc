@@ -1,5 +1,14 @@
 {
-  "presets": ["react", ["env", { "modules": false }]],
+  "presets": [
+    "react",
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions"]
+      },
+      "modules": false
+      }
+    ]
+  ],
   "plugins": [
     "transform-class-properties",
     "transform-object-rest-spread",
