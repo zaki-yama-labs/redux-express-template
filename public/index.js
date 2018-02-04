@@ -4,6 +4,8 @@ import { Provider } from 'react-redux';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
+import '@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css';
+
 import configureStore from './store/configureStore';
 import App from './containers/App';
 

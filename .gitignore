@@ -3,6 +3,7 @@
 bundle-server.js
 bundle.js
 bundle.js.map
+public/assets/lds
 
 # Logs
 logs

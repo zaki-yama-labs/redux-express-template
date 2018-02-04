@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "heroku-postbuild": "yarn run build",
+    "postinstall": "rm -rf public/assets/lds && cp -r node_modules/@salesforce-ux/design-system/assets public/assets/lds",
     "start": "babel-watch app.js",
     "build": "yarn run build:client && yarn run build:server",
     "build:client": "NODE_ENV=production webpack --config=webpack.config.prod.babel.js --progress --colors",
@@ -30,6 +31,7 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.8",
     "express": "^4.16.2",
+    "file-loader": "^1.1.6",
     "node-sass": "^4.7.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
