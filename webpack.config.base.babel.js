@@ -6,6 +6,9 @@ export default {
   entry: [
     './index',
   ],
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   output: {
     filename: 'bundle.js',
     path: path.resolve(path.join(__dirname, 'public', 'assets')),
@@ -14,8 +17,11 @@ export default {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
+        test: /\.jsx?$/,
+        include: [
+          path.resolve(path.join(__dirname, 'public')),
+          path.resolve(path.join(__dirname, 'node_modules/@salesforce/design-system-react')),
+        ],
         use: 'babel-loader',
       },
       {
