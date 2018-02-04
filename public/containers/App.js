@@ -1,7 +1,4 @@
-import React from 'react';
+import { connect } from 'react-redux';
+import App from '../components/App';
 
-export default class App extends React.Component {
-  render() {
-    return <div>Hello, World</div>;
-  }
-}
+export default connect()(App);
