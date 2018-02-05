@@ -12,7 +12,7 @@ export default {
   output: {
     filename: 'bundle.js',
     path: path.resolve(path.join(__dirname, 'public', 'assets')),
-    publicPath: '/assets',
+    publicPath: '/assets/',
   },
   module: {
     rules: [
