@@ -1,8 +1,8 @@
-import webpack from 'webpack';
-import merge from 'webpack-merge';
-import baseConfig from './webpack.config.base.babel';
+const webpack = require('webpack');
+const merge = require('webpack-merge');
+const baseConfig = require('./webpack.config.base');
 
-export default merge(baseConfig, {
+module.exports = merge(baseConfig, {
   devtool: 'cheap-module-source-map',
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
