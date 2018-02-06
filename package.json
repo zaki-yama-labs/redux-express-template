@@ -7,7 +7,7 @@
     "heroku-postbuild": "yarn run build",
     "start": "babel-watch app.js",
     "build": "yarn run build:client && yarn run build:server",
-    "build:client": "NODE_ENV=production webpack --config=webpack.config.prod.babel.js --progress --colors",
+    "build:client": "NODE_ENV=production webpack --config=webpack.config.prod.js --progress --colors",
     "build:server": "babel app.js -o bundle-server.js",
     "lint": "eslint src",
     "serve": "node bundle-server.js",
