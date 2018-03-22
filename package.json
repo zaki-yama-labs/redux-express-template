@@ -9,8 +9,8 @@
     "build": "yarn run build:client && yarn run build:server",
     "build:client": "NODE_ENV=production webpack --config=webpack.config.prod.js --progress --colors",
     "build:server": "babel app.js -o bundle-server.js",
-    "lint": "eslint src",
-    "format": "prettier-eslint \"public/**/*.js\" app.js",
+    "lint": "eslint public",
+    "format": "prettier-eslint --write \"public/**/*.js\" app.js --ignore **/bundle.js",
     "serve": "node bundle-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
