@@ -9,8 +9,9 @@
     "build": "yarn run build:client && yarn run build:server",
     "build:client": "NODE_ENV=production webpack --config=webpack.config.prod.js --progress --colors",
     "build:server": "babel app.js -o bundle-server.js",
+    "format": "prettier-eslint --write \"public/**/*.js\" app.js --ignore **/bundle.js",
     "flow": "flow",
-    "lint": "eslint src",
+    "lint": "eslint public",
     "serve": "node bundle-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -50,6 +51,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
-    "flow-bin": "^0.69.0"
+    "flow-bin": "^0.69.0",
+    "prettier-eslint-cli": "^4.7.1"
   }
 }

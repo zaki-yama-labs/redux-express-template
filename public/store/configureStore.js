@@ -11,11 +11,7 @@ export default function configureStore(initialState) {
     const { logger } = require('redux-logger');
     middlewares.push(logger);
   }
-  const store = createStore(
-    rootReducer,
-    initialState,
-    applyMiddleware(...middlewares),
-  );
+  const store = createStore(rootReducer, initialState, applyMiddleware(...middlewares));
 
   if (!__PRODUCTION__ && module.hot) {
     module.hot.accept('../reducers', () => {
