@@ -36,7 +36,7 @@
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "sass-loader": "^6.0.6",
-    "style-loader": "^0.19.1",
+    "style-loader": "^0.23.0",
     "webpack": "^3.10.0",
     "webpack-dev-middleware": "^2.0.4",
     "webpack-dev-server": "^2.11.0",
