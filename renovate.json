@@ -3,5 +3,5 @@
     "config:base"
   ],
  "timezone": "Asia/Tokyo",
- "schedule": ["after 11am and before 9pm every weekend"]
+ "schedule": ["after 11am and before 9pm every weekday"]
 }
