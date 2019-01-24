@@ -44,7 +44,7 @@
     "webpack-merge": "^4.1.1"
   },
   "devDependencies": {
-    "babel-watch": "2.0.7",
+    "babel-watch": "2.0.8",
     "eslint": "5.12.1",
     "eslint-config-airbnb": "17.1.0",
     "eslint-plugin-import": "2.15.0",
