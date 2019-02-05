@@ -4,5 +4,9 @@
   ],
  "timezone": "Asia/Tokyo",
  "schedule": ["after 11am and before 9pm every weekday"],
- "labels": ["renovate"]
+ "labels": ["renovate"],
+
+ "patch": {
+   "automerge": true
+ }
 }
