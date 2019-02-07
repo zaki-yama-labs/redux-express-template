@@ -12,7 +12,7 @@
     "lint": "eslint public",
     "format": "prettier-eslint --write \"public/**/*.js\" server.js --ignore **/bundle.js",
     "serve": "node bundle-server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\""
   },
   "keywords": [],
   "author": "",
