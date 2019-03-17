@@ -1,12 +1,15 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    ":automergePatch",
+    ":noUnscheduledUpdates",
+    ":separatePatchReleases",
+    ":unpublishSafe"
   ],
  "timezone": "Asia/Tokyo",
- "schedule": ["after 11am and before 9pm every weekday"],
- "labels": ["renovate"],
-
- "patch": {
-   "automerge": true
- }
+ "schedule": [
+   "after 9am",
+   "before 9pm"
+ ],
+ "labels": ["renovate"]
 }
