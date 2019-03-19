@@ -1,15 +1,5 @@
 {
   "extends": [
-    "config:base",
-    ":automergePatch",
-    ":noUnscheduledUpdates",
-    ":separatePatchReleases",
-    ":unpublishSafe"
-  ],
- "timezone": "Asia/Tokyo",
- "schedule": [
-   "after 9am",
-   "before 9pm"
- ],
- "labels": ["renovate"]
+    "@cybozu"
+  ]
 }
