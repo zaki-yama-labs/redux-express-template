@@ -27,7 +27,7 @@
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^2.1.1",
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
